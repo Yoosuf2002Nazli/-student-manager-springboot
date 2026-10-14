@@ -46,9 +46,7 @@ th:text="${#lists.size(students)}">0</span></h2>
  <td th:text="${s.course}"></td>
  <td th:text="${s.age}"></td>
  <td class="actions">
- <!-- UPDATE -->
  <a class="btn small" th:href="@{/students/{id}/edit(id=${s.id})}">Edit</a>
- <!-- DELETE -->
  <form th:action="@{/students/{id}/delete(id=${s.id})}" method="post"
  onsubmit="return confirm('Delete this student?');">
  <button type="submit" class="btn small danger">Delete</button>
